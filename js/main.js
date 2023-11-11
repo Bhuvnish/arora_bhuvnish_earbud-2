@@ -110,5 +110,18 @@
     The MouseEvent.clientX read-only property provides the horizontal coordinate within the application's client area at which the event occurred (as opposed to the coordinates within the page). For example, clicking in the top-left corner of the client area will always result in a mouse event with a clientX value of 0, regardless of whether the page is scrolled horizontally.
     */
 
+
+    (function(){
+
+      let button = document.querySelector("#button");
+      let burgerCon = document.querySelector("#burger-con");
+    
+      function hamburgerMenu() {
+        burgerCon.classList.toggle("slide-toggle");
+        button.classList.toggle("expanded");
+      };
+    
+      button.addEventListener("click", hamburgerMenu, false);		
+    })();
   
 })();
