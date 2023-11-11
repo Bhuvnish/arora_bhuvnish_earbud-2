@@ -48,6 +48,16 @@
     //document.body.addEventListener('touchmove', onMove);
     
     })();
+
+
+
+
+//image scrollcode
+
+
+
+
+
     const canvas = document.querySelector("#explode-view");
     const context = canvas.getContext("2d");
     canvas.width = 1920;

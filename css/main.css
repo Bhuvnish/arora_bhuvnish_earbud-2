@@ -40,7 +40,7 @@ body {
     display: block;
     max-width: 1200px;
     margin: auto;
-    border: solid 1px #f8f3f3;
+    border: solid 1px #000000;
   }
   #imageCon {
     position: relative;
