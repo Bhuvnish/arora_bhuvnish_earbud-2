@@ -23,7 +23,7 @@ section p {
     display: block;
     max-width: 1200px;
     margin: auto;
-    border: solid 1px #000000;
+    border: solid 1px #666;
   }
   #imageCon {
     position: relative;
