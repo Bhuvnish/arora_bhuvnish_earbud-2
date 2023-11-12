@@ -1,3 +1,7 @@
+.hidden{
+  display: none;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -16,13 +20,13 @@ section p {
 }
 
 p {
-  color: #fff;
+  color: #fcebeb;
   font-size: 34px;
   line-height: 44px;
 }
 
 body {
-  background: #000;
+  background: #000000;
 }
 a {
   text-decoration: none;
@@ -62,10 +66,10 @@ a {
 
 #main-nav ul li a {
   display: block;
-  padding: 5px 0 10px 0;
+  
   text-align: center;
-  color: #f7f7f0;
-  font-size: 30px;
+  color: #f5efef;
+  font-size: 22px;
 }
 
 #main-nav ul li a:hover {
@@ -84,24 +88,32 @@ a {
   margin-bottom: 10px;
 }
 
+#logo {
 
-#sticky-nav-con {
-  position: sticky;
-  background-color: #2B2730;
-  top: 0px;
-  border-bottom: solid 1px #E6E2C3;
-  z-index: 1;
+ 
+  margin-bottom: 20px;
+  
+  margin-top: 30px;
 }
+#sticky-nav-con {
+ 
+  background-color: #000000;
+  top: 0px;
+ 
+ 
+}
+
+
+
+
+
+
 
 @media screen and (min-width: 768px) {
   #button {
     display: none;
   }
-  #logo {
-    margin-top: 40px;
-    order: -1;
-    margin-left: 170px;
-  }
+ 
   #burger-con {
     display: block;
     font-size: 13px;
