@@ -1,4 +1,24 @@
 (() => {
+  
+
+ 
+   
+    gsap.to("#logo", { y: 20, yoyo: true, repeat: -1, ease: "power1.inOut" });
+  
+ 
+    gsap.timeline({ repeat: -1 })
+    
+    .to("#heroimage", { x: 50, duration: 5 }, "-=0.5")
+    .to("#heroimage", { rotation: 0, x: 0, duration: 1 }, "-=0.5");
+
+
+
+
+
+
+    
+
+
     (function(){
         "use strict";
     
