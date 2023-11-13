@@ -153,7 +153,7 @@ a {
   #main-nav {
     margin-top: 4%;
     margin-bottom: 4%;
-    border-left: 1px solid #E6E2C3;
+    border-left: 1px solid rgb(232, 25, 17);
     padding-left: 30px;
   }
 }
@@ -184,7 +184,7 @@ a {
     position: absolute; /*images are stacked in order via absolute*/
     left: 0;
     right: 0;
-    height: 71vh;
+    height: 70vh;
   }
   .image-right {
     background: url(../images/x-ray.jpg) no-repeat;
@@ -204,9 +204,9 @@ a {
     
   }
   .image-drag {
-    background-color: #de2121;
+    background-color: #030303;
     left: 50%; /*match up with image left*/
-    width: 8px; /*orig 49*/
+    width: 2px; /*orig 49*/
     cursor: pointer;
   }
 }/*# sourceMappingURL=main.css.map */
@@ -244,6 +244,10 @@ a {
   margin-top: 300px;
 
 }
+
+
+
+
 
 .footer{
   margin-top: 30px;
