@@ -61,11 +61,11 @@
     
     drag.addEventListener('mousedown', onDown, false); 
     //add listener to actual drag div, if user clicks on it
-    //drag.addEventListener('touchstart', onDown);
+    drag.addEventListener('touchstart', onDown);
     document.body.addEventListener('mouseup', onUp, false);
-    //document.body.addEventListener('mo', onUp);
+    document.body.addEventListener('mo', onUp);
     document.body.addEventListener('mousemove', onMove, false);
-    //document.body.addEventListener('touchmove', onMove);
+  document.body.addEventListener('touchmove', onMove);
     
     })();
 
@@ -144,4 +144,49 @@
       button.addEventListener("click", hamburgerMenu, false);		
     })();
   
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the earbud path element
+      var earbudPath = document.getElementById('earbud-path');
+  
+      // Function to handle scroll events
+      function handleScroll() {
+          // Calculate the height of the earbud path based on the scroll position
+          var scrollHeight = Math.min(window.scrollY, window.innerHeight * 0.8);
+  
+          // Update the control point in the path to modify the shape
+          earbudPath.setAttribute('d', `M50 ${(80 + scrollHeight)} C 50 ${(90 + scrollHeight)}, 40 ${(90 + scrollHeight)}, 40 ${(80 + scrollHeight)}`);
+  
+          // Change the fill color based on the scroll position
+          var color = calculateColor(scrollHeight, window.innerHeight * 0.8);
+          earbudPath.style.fill = color;
+      }
+  
+      // Attach the handleScroll function to the scroll event
+      window.addEventListener('scroll', handleScroll);
+  
+      // Function to calculate color based on scroll position
+      function calculateColor(scrollHeight, maxHeight) {
+          // Normalize scrollHeight to be between 0 and 1
+          var normalizedScroll = scrollHeight / maxHeight;
+  
+          // Use a gradient from blue to red based on the normalized scroll position
+          var red = Math.round(255 * normalizedScroll);
+          var blue = Math.round(255 * (1 - normalizedScroll));
+  
+          // Convert RGB values to a CSS color string
+          return `rgb(${red}, 0, ${blue})`;
+      }
+  });
+
+
+
+
+
+
+
+
+    
 })();

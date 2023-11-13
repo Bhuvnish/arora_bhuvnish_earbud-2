@@ -5,6 +5,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+  
 }
 
 h2, p {
@@ -43,6 +44,7 @@ a {
   border: 0;
   cursor: pointer;
 }
+
 
 #main-nav button.expanded {
   transform: rotate(90deg);
@@ -99,6 +101,8 @@ a {
  
   background-color: #000000;
   top: 0px;
+ 
+ 
  
  
 }
@@ -172,6 +176,8 @@ a {
     background-size: cover;
     width: 1200px;
     height: 750px;
+    background-size: cover;
+    background-position: center center;
   }
   .image-left {
     background: url(../images/view.jpg) no-repeat;
@@ -180,11 +186,25 @@ a {
     width: 1200px;
     height: 750px;
     
+    
   }
   .image-drag {
     background-color: #de2121;
-    left: 90%; /*match up with image left*/
+    left: 50%; /*match up with image left*/
     width: 8px; /*orig 49*/
     cursor: pointer;
   }
 }/*# sourceMappingURL=main.css.map */
+
+
+
+#drawing-container {
+  position: fixed; /* or 'absolute' if you prefer relative to a specific container */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  
+  margin-top: 300px;
+}
+
