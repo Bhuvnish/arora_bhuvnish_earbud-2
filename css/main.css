@@ -235,7 +235,7 @@ a {
 
 
 #drawing-container {
-  position: fixed; /* or 'absolute' if you prefer relative to a specific container */
+  position: fixed; 
   top: 0;
   left: 50%;
   transform: translateX(-50%);
